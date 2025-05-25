@@ -11,135 +11,321 @@
 
 <body>
 
-   <!-- Page Container -->
-<div class="bg-green-900 bg-[url('./img/bg.png')] text-white py-4 px-8 min-h-screen mx-auto">
+    <!-- Page Container start -->
+    <div class="bg-green-900 bg-[url('./img/bg.png')] text-white py-4 px-8  mx-auto">
 
-    <!-- Navbar Start -->
-    <nav class="bg-white text-green-900 p-4 rounded-[32px] shadow-md mx-auto">
-        <div class="flex flex-wrap items-center justify-between">
+        <!-- Navbar Start -->
+        <nav class="bg-white text-green-900 fixed top-4 left-0 w-full z-50 p-4 rounded-[32px] shadow-md mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
 
-            <!-- Logo -->
-            <div class="flex items-center">
-                <h1 class="text-2xl font-bold"><a href="#">CoolQuest</a></h1>
-            </div>
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold"><a href="#">CoolQuest</a></h1>
+                </div>
 
-            <!-- Toggle Button (Mobile) -->
-            <div class="block md:hidden">
-                <button onclick="toggleMenu()" class="text-green-900 focus:outline-none">
-                    <!-- Hamburger Icon -->
-                    <svg id="toggle-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <!-- Close Icon -->
-                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Menu Items -->
-            <div id="menu" class="hidden w-full md:flex md:items-center md:justify-between md:w-auto mt-4 md:mt-0">
-                <ul class="flex flex-col md:flex-row md:space-x-6 text-black font-semibold">
-                    <li><a href="#" class="hover:text-gray-500">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-500">About</a></li>
-                    <li><a href="#" class="hover:text-gray-500">Services</a></li>
-                    <li><a href="#" class="hover:text-gray-500">Contact</a></li>
-                </ul>
-                <div class="mt-4 md:mt-0 md:ml-6">
-                    <button
-                        class="px-4 py-2 bg-green-900 text-white font-bold rounded-full text-lg hover:bg-green-800">
-                        Get Free Quote
+                <!-- Toggle Button (Mobile) -->
+                <div class="block md:hidden">
+                    <button onclick="toggleMenu()" class="text-green-900 focus:outline-none">
+                        <!-- Hamburger Icon -->
+                        <svg id="toggle-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Close Icon -->
+                        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </button>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4 items-center py-12">
-        
-        <!-- Text Section -->
-        <div class="space-y-8">
-            <!-- Headline and  -->
-            <div>
-                <h1 class="text-xl md:text-5xl font-bold mb-4">Reliable HVAC for Every Season</h1>
-                <ul class="space-y-2">
-                    <li class="flex gap-2 items-center">
-                        <img src="./img/checkmark-badge-01.png" alt="" class="w-6 h-6">
-                        Certified & Experienced Technicians
-                    </li>
-                    <li class="flex gap-2 items-center">
-                        <img src="./img/alarm-clock.png" alt="" class="w-6 h-6">
-                        Fast, Reliable Service
-                    </li>
-                    <li class="flex gap-2 items-center">
-                        <img src="./img/hot-price.png" alt="" class="w-6 h-6">
-                        Transparent, Affordable Pricing
-                    </li>
-                </ul>
+                <!-- Menu Items -->
+                <div id="menu" class="hidden w-full md:flex md:items-center md:justify-between md:w-auto mt-4 md:mt-0">
+                    <ul class="flex flex-col md:flex-row md:space-x-6 text-black font-semibold">
+                        <li><a href="#" class="hover:text-gray-500">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-500">About</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Services</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    <div class="mt-4 md:mt-0 md:ml-6">
+                        <button
+                            class="px-4 py-2 bg-green-900 text-white font-bold rounded-full text-lg hover:bg-green-800">
+                            Get Free Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Section start -->
+        <div class="grid pt-36 grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4 items-center py-12">
+
+            <!-- Text Section -->
+            <div class="space-y-8">
+                <!-- Headline and  -->
+                <div>
+                    <h1 class="text-xl md:text-5xl font-bold mb-4">Reliable HVAC for Every Season</h1>
+                    <ul class="space-y-2">
+                        <li class="flex gap-2 items-center">
+                            <img src="./img/checkmark-badge-01.png" alt="" class="w-6 h-6">
+                            Certified & Experienced Technicians
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <img src="./img/alarm-clock.png" alt="" class="w-6 h-6">
+                            Fast, Reliable Service
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <img src="./img/hot-price.png" alt="" class="w-6 h-6">
+                            Transparent, Affordable Pricing
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Form Section -->
+                <div class="bg-white p-6 rounded-lg w-full">
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Name"
+                            class="border border-green-800 rounded-md p-2 outline-none text-black w-full" />
+                        <input type="text" placeholder="Phone"
+                            class="border border-green-800 rounded-md p-2 outline-none text-black w-full" />
+                        <input type="text" placeholder="Email"
+                            class="border border-green-800 rounded-md p-2 outline-none text-black w-full " />
+                        <button type="submit"
+                            class="bg-green-900 text-white font-semibold py-2 px-4 rounded-md w-full m">Submit</button>
+                    </form>
+                </div>
+
+
+                <!-- company section -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold">Certified Installer</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <img src="./img/layer102.png" alt="gap" class="w-full h-auto">
+                        <img src="./img/lendox.png" alt="lendox" class="w-full h-auto">
+                        <img src="./img/tanaLekha.png" alt="daikin" class="w-full h-auto">
+                    </div>
+                </div>
             </div>
 
-            <!-- Form Section -->
-            <div class="bg-white p-6 rounded-lg w-full">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Name"
-                        class="border border-green-800 rounded-md p-2 outline-none text-black w-full" />
-                    <input type="text" placeholder="Phone"
-                        class="border border-green-800 rounded-md p-2 outline-none text-black w-full" />
-                    <input type="text" placeholder="Email"
-                        class="border border-green-800 rounded-md p-2 outline-none text-black w-full " />
-                    <button type="submit"
-                        class="bg-green-900 text-white font-semibold py-2 px-4 rounded-md w-full m">Submit</button>
-                </form>
-            </div>
-            
-
-            <!-- company section -->
-            <div class="space-y-4">
-                <h3 class="text-lg font-semibold">Certified Installer</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <img src="./img/layer102.png" alt="gap" class="w-full h-auto">
-                    <img src="./img/lendox.png" alt="lendox" class="w-full h-auto">
-                    <img src="./img/tanaLekha.png" alt="daikin" class="w-full h-auto">
+            <!-- Image Section -->
+            <div class="w-full flex flex-col justify-center items-center">
+                <div class="w-full max-w-xl h-[280px] relative bg-amber-50 rounded-tl-[500px] shadow-lg">
+                    <img class="absolute top-[-80px] left-1/2 transform -translate-x-1/2 w-auto max-w-[90%]"
+                        src="./img/hero model.png" alt="">
+                    <img class="absolute top-[-80px] left-[-40px] w-auto max-w-[90%]" src="./img/warranty.png" alt="">
+                    <img class="absolute right-[-10px] top-[10px] w-auto max-w-[90%]" src="./img/review.png" alt="">
+                    <img class="absolute bottom-[-10px] w-auto max-w-[90%]" src="./img/License no.png" alt="">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <img src="./img/past work one.png" alt="">
+                    <img src="./img/past work two.png" alt="">
                 </div>
             </div>
         </div>
+        <!-- hero section end -->
+    </div>
+    <!-- page container end -->
 
-        <!-- Image Section -->
-        <div class="w-full flex flex-col justify-center items-center">
-            <div class="w-full max-w-xl h-[280px] relative bg-amber-50 rounded-tl-[500px] shadow-lg">
-                <img class="absolute top-[-80px] left-1/2 transform -translate-x-1/2 w-auto max-w-[90%]"
-                    src="./img/hero model.png" alt="">
-                <img class="absolute top-[-80px] left-[-40px] w-auto max-w-[90%]" src="./img/warranty.png" alt="">
-                <img class="absolute right-[-10px] top-[10px] w-auto max-w-[90%]" src="./img/review.png" alt="">
-                <img class="absolute bottom-[-10px] w-auto max-w-[90%]" src="./img/License no.png" alt="">
+
+    <!-- card section start -->
+    <div class="mt-12">
+        <h1 class=" text-3xl font-bold text-center ">Trusted by Families Like Yours</h1>
+
+        <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 py-8">
+            <div
+                class="bg-white card p-6 rounded-[50px] shadow-md hover:bg-green-900 hover:text-white transition duration-300">
+                <div class="flex flex-col items-center text-center justify-center">
+                    <img src="./img/Frame.png" alt="Customer 1" class=" h-auto mb-4 text-center  rounded-full w">
+                    <h2 class="text-xl font-semibold mb-2">John Doe</h2>
+                    <p class="star-icon"></p>
+                    <p class=" mt-8 font-semibold">“Super professional service, quick installation, and everything works
+                        perfectly.
+                        Highly recommend!”</p>
+                    <img src="./img/google.png" alt="google">
+                    <p>Reviewed on Google</p>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <img src="./img/past work one.png" alt="">
-                <img src="./img/past work two.png" alt="">
+
+            <div
+                class="bg-white card p-6 rounded-[50px] shadow-md hover:bg-green-900 hover:text-white transition duration-300">
+                <div class="flex flex-col items-center text-center justify-center">
+                    <img src="./img/Frame.png" alt="Customer 1" class=" h-auto mb-4 text-center  rounded-full w">
+                    <h2 class="text-xl font-semibold mb-2">John Doe</h2>
+                    <p class="star-icon"></p>
+                    <p class=" mt-8 font-semibold">“Super professional service, quick installation, and everything works
+                        perfectly.
+                        Highly recommend!”</p>
+                    <img src="./img/google.png" alt="google">
+                    <p>Reviewed on Google</p>
+                </div>
+            </div>
+            <div
+                class="bg-white card p-6 rounded-[50px] shadow-md hover:bg-green-900 hover:text-white transition duration-300">
+                <div class="flex flex-col items-center text-center justify-center">
+                    <img src="./img/Frame.png" alt="Customer 1" class=" h-auto mb-4 text-center  rounded-full w">
+                    <h2 class="text-xl font-semibold mb-2">John Doe</h2>
+                    <p class="star-icon"></p>
+                    <p class=" mt-8 font-semibold">“Super professional service, quick installation, and everything works
+                        perfectly.
+                        Highly recommend!”</p>
+                    <img src="./img/google.png" alt="google">
+                    <p>Reviewed on Google</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="text-center mt-2">
+            <button
+                class="px-6 py-2 bg-green-900 text-white font-semibold rounded-lg text-lg hover:bg-green-800 transition duration-300">
+                View more
+            </button>
+
+
+        </div>
+        <!-- card section end -->
+    </div>
+    <!-- company section start -->
+    <div class="mt-12">
+        <h1 class="text-3xl font-bold text-center">Your Trusted HVAC Experts</h1>
+        <div class=" flex flex-col items-center justify-center mt-8">
+
+            <div class=" grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center  items-center">
+                <img src="./img/company/Frame 53.png" alt="gap" class=" h-auto">
+                <img src="./img/company/Frame 54.png" alt="lendox" class=" h-auto">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3  gap-4 mt-4 justify-items-center items-center  ">
+                <img src="./img/company/bbb.png" alt="daikin" class=" ">
+                <img src="./img/company/epa.png" alt="Frame" class="">
+                <img src="./img/company/nate.png" alt="Frame" class=" h-auto">
             </div>
         </div>
     </div>
-
-</div>
-
+    <!-- company section end  -->
 
 
-        <!-- Toggle Menu Script -->
-        <script>
-            function toggleMenu() {
-                const menu = document.getElementById('menu');
-                const toggleIcon = document.getElementById('toggle-icon');
-                const closeIcon = document.getElementById('close-icon');
+    <!-- category section start  -->
 
-                menu.classList.toggle('hidden');
-                toggleIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-            }
-        </script>
+    <div class=" space-y-8 bg-[#EBFFF1] pb-4">
+        <h1 class="text-3xl font-bold text-center py-4">Your Trusted HVAC Experts</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center   items-center ">
+            <!-- Box 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 w-[340px] h-[250px  text-center">
+                <div class="text-green-700 text-4xl mb-4">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">24/7 Emergency Services</h3>
+                <p class="text-sm text-gray-600">Fast and reliable emergency HVAC services available 24/7.</p>
+            </div>
+
+
+            <div class="bg-white rounded-xl shadow-md p-6 w-[340px] h-[250px  text-center">
+                <div class="text-green-700 text-4xl mb-4">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Experienced Professionals</h3>
+                <p class="text-sm text-gray-600">Highly trained and certified HVAC experts with years of industry
+                    experience.</p>
+            </div>
+
+
+
+            <div class="bg-white rounded-xl shadow-md p-6 w-[340px] h-[250px  text-center">
+                <div class="text-green-700 text-4xl mb-4">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Affordable Pricing</h3>
+                <p class="text-sm text-gray-600">Transparent and competitive pricing with no hidden fees.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- category section end -->
+
+    <!-- worker section start -->
+    <section class="mt-12">
+        <div class=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full mx-auto gap-8 px-8">
+            <div class=" space-y-28 text-center md:text-left">
+                <h2 class=" text-4xl font-semibold w-[555px] ">Past Work That Speaks for Itself</h2>
+                <p>Explore some of the outstanding HVAC projects we’ve proudly completed. Every image reflects our
+                    unwavering commitment to quality, reliability, and expert craftsmanship — from flawless
+                    installations to seamless maintenance. These are just a few examples of the exceptional results we
+                    deliver for homeowners like you.</p>
+                <div class="">
+                    <button
+                        class="px-6 py-2 bg-green-900 text-white font-semibold rounded-lg text-lg hover:bg-green-800 transition duration-300">
+                      Explore Our Work
+                    </button>
+                </div>
+
+            </div>
+
+            <div class=" p-6 bg-green-900 rounded-[15px] shadow-lg space-y-4">
+                <h2 class="text-3xl font-semibold text-white">Complete HVAC System Installation</h2>
+                <p class="text-xl text-white">Designed and installed a full heating and cooling solution for a newly built modern home.</p>
+
+                <img src="./img/worker/Frame 65.png" alt="Worker Image" class="w-full h-auto rounded-[50px]">
+
+            </div>
+
+
+             <div class=" p-6 bg-green-900 rounded-[15px] shadow-lg space-y-4">
+                <h2 class="text-3xl font-semibold text-white">Complete HVAC System Installation</h2>
+                <p class="text-xl text-white">Designed and installed a full heating and cooling solution for a newly built modern home.</p>
+
+                <img src="./img/worker/Frame 66.png" alt="Worker Image" class="w-full h-auto rounded-[50px]">
+
+            </div>
+
+            
+             <div class=" p-6 bg-green-900 rounded-[15px] shadow-lg space-y-4">
+                <h2 class="text-3xl font-semibold text-white">Emergency AC Repair & Restoration</h2>
+                <p class="text-xl text-white">Designed and installed a full heating and cooling solution for a newly built modern home.</p>
+
+                <img src="./img/worker/Frame 67.png" alt="Worker Image" class="w-full h-auto rounded-[50px]">
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+    <!-- worker section end -->
+
+
+
+
+
+    <script>
+        // star icon jd 
+
+        const starIcon = document.querySelector('.star-icon');
+
+        for (let i = 0; i < 5; i++) {
+            starIcon.innerHTML += `<i class="fa-solid fa-star"></i>`;
+            starIcon.classList.add('text-yellow-500', 'mb-2', 'gap-2', 'flex');
+        }
+
+        // star icon jd end
+
+
+
+        //   <!-- Toggle Menu Script -->
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const toggleIcon = document.getElementById('toggle-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            menu.classList.toggle('hidden');
+            toggleIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 
